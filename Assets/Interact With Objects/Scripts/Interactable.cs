@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] private GameSettings gameSettings;
     public bool canInteract = false;
     private GameObject[] interactableObjects;
-    private float closestObjDist = 10000000;
+    private float closestObjDist = Mathf.Infinity;
     private GameObject closestObject = null;
 
     [SerializeField] private float interactableDistance = 5f;
